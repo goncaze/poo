@@ -1,4 +1,4 @@
-class Produto:
+class Produto2:
 
     def __init__(self, nome:str, preco:float) -> None:
         """ 

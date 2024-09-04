@@ -1,4 +1,4 @@
-class ProdutoSemDocstring:
+class Produto1:
 
     def __init__(self, nome:str, preco:float) -> None:   
         self._nome = nome
