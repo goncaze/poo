@@ -8,12 +8,13 @@ class Produto2:
 
             Ex.: obj_produto = Produto('titulo', 1.99)
         """     
-        self._nome = nome
-        self._preco = preco
+        self.nome = nome
+        self.preco = preco
 
 
     def __str__(self) -> str:
         mensagem = f"""
+            OBSERVAÇÃO: com docstring! \n
             {self.nome = }
             {self.preco = }
         """

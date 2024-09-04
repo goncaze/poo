@@ -1,4 +1,5 @@
-class Produto:
+
+class Produto3:
 
     def __init__(self, nome:str, preco:float) -> None:
         """ 
@@ -31,6 +32,7 @@ class Produto:
 
     def __str__(self) -> str:
         mensagem = f"""
+            OBSERVAÇÃO: com modificadores de acesso! \n
             {self.nome = }
             {self.preco = }
         """
