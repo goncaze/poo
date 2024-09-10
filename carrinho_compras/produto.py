@@ -19,3 +19,10 @@ class Produto:
     @preco.setter
     def preco(self, novo_preco) -> None:
         self.preco = novo_preco
+
+    def __str__(self) -> str:
+        produto_impresso = f"""
+            {self.nome = }
+            {self.preco = }
+        """
+        return produto_impresso
