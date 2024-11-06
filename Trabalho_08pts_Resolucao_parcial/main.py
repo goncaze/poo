@@ -37,10 +37,11 @@ class Principal:
                     self.data_ctlr.menu_data()
                 case "3":  # [3] - Operações com categorias de evento
                     pass
-                case "4":  # [4] - Operações com categorias de evento_data
+                case "4":  # [4] - Operações com eventos
+                    pass
+                case "4":  # [5] - Operações com evento_datas
                     pass
 
 
 if __name__ == "__main__":
-    p = Principal()
-    p.menu_principal()
+    Principal().menu_principal()
