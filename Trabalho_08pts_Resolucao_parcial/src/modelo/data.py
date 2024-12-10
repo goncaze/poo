@@ -11,7 +11,6 @@ class Data:
         self._data: str = data
         self._data_categoria: DataCategoria = data_categoria
 
-
     @property
     def id(self) -> str:
         return self._id
@@ -29,11 +28,11 @@ class Data:
         self._data = nova_data
 
     @property
-    def data_categoria(self) -> int:
+    def data_categoria(self) -> DataCategoria:
         return self._data_categoria
 
     @data_categoria.setter
-    def data_categoria(self, nova_data_categoria: int) -> None:
+    def data_categoria(self, nova_data_categoria: DataCategoria) -> None:
         self._data_categoria = nova_data_categoria
 
     def __str__(self):

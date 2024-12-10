@@ -12,8 +12,9 @@ class DataCategoriaController:
 
     def bucar_data_por_categoria(self, dt_cat: DataCategoria) -> bool:
         for data in self.lista_data:
-            resultado = True if data.data_categoria == dt_cat else False
-        return resultado
+            if data.data_categoria.id == dt_cat.id:
+                return True
+        return False
 
     def ver_datas_categorias(self) -> None:
         os.system("cls")
@@ -136,10 +137,10 @@ class DataCategoriaController:
             if data_cat.id == id:
                 if self.bucar_data_por_categoria(data_cat):
                     return resultado
-                else:
-                    self.lista_dt_cat.remove(data_cat)
-                    resultado = "\n\n\t\t Categoria excluída com sucesso! \n\n"
-                    return resultado
+
+        self.lista_dt_cat.remove(data_cat)
+        resultado = "\n\n\t\t Categoria excluída com sucesso! \n\n"
+        return resultado
 
     def menu_data_categoria(self) -> None:
         """Menu de Operações para data_categoria"""

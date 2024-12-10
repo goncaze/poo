@@ -133,7 +133,7 @@ class DataController:
 
         menu = """
         ----------------------------------------------
-        \tMenu de operações Data_Categoria
+        \tMenu de operações Data
         ----------------------------------------------
         [1] - Ver datas
         [2] - Inserir data
